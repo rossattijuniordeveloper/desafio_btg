@@ -1,3 +1,4 @@
 [ZoneTransfer]
 ZoneId=3
-HostUrl=about:internet
+ReferrerUrl=https://www.google.com/
+HostUrl=https://www.google.com/
