@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 
 import com.tecnopar.desafio_btg.factory.OrderEntityFactory;
 
-
 class OrderResponseTest {
 
     @Nested

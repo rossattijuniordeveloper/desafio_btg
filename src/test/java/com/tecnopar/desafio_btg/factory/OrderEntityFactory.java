@@ -12,7 +12,11 @@ import com.tecnopar.desafio_btg.entity.OrderItem;
 public class OrderEntityFactory {
 
         public static OrderEntity build() {
-        var items = new OrderItem("notebook", 1, BigDecimal.valueOf(20.50));
+        var items = new OrderItem(
+            "notebook",
+            1,
+            BigDecimal.valueOf(20.50)
+        );
 
         var entity = new OrderEntity();
         entity.setOrderId(1L);
