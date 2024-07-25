@@ -25,6 +25,7 @@ public class OrderEntityFactory {
         entity.setItems(List.of(items));
 
         return entity;
+        
     }
 
     public static Page<OrderEntity> buildWithPage() {

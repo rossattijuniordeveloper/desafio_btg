@@ -48,6 +48,7 @@ public class OrderService {
         var orders = orderRepository.findAllByCustomerId(customerId, pageRequest);
 
         return orders.map(OrderResponse::fromEntity);
+        
     }
 
     @SuppressWarnings("null")
