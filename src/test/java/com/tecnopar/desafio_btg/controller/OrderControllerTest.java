@@ -44,8 +44,10 @@ class OrderControllerTest {
             var customerId = 1L;
             var page = 0;
             var pageSize = 10;
+            
             doReturn(OrderResponseFactory.buildWithOneItem())
                     .when(orderService).findAllByCustomerId(anyLong(), any());
+
             doReturn(BigDecimal.valueOf(20.50))
                     .when(orderService).findTotalOnOrdersByCustomerId(anyLong());
 
