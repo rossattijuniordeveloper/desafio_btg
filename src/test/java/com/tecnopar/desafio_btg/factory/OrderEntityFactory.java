@@ -24,8 +24,7 @@ public class OrderEntityFactory {
         entity.setTotal(BigDecimal.valueOf(20.50));
         entity.setItems(List.of(items));
 
-        return entity;
-        
+        return entity;        
     }
 
     public static Page<OrderEntity> buildWithPage() {

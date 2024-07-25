@@ -31,6 +31,7 @@ public class OrderService {
         this.mongoTemplate = mongoTemplate;
     }
 
+    
     public void save(OrderCreatedEvent event) {
 
         var entity = new OrderEntity();
@@ -48,7 +49,7 @@ public class OrderService {
         var orders = orderRepository.findAllByCustomerId(customerId, pageRequest);
 
         return orders.map(OrderResponse::fromEntity);
-        
+
     }
 
     @SuppressWarnings("null")

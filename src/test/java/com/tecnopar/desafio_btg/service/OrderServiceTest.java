@@ -50,7 +50,7 @@ class OrderServiceTest {
 
         @Test
         void shouldCallRepositorySave() {
-            
+
             // ARRANGE
             var event = OrderCreatedEventFactory.buildWithOneItem();
 
@@ -204,5 +204,5 @@ class OrderServiceTest {
             verify(mongoTemplate, times(1)).aggregate(any(Aggregation.class), eq("tb_orders"), eq(Document.class));
         }
     }
-
+    
 }
