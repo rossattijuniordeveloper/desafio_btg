@@ -39,5 +39,5 @@ class OrderCreatedListenerTest {
             verify(orderService, times(1)).save(eq(message.getPayload()));
         }
     }
-
+    
 }
