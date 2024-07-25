@@ -50,6 +50,7 @@ class OrderServiceTest {
 
         @Test
         void shouldCallRepositorySave() {
+            
             // ARRANGE
             var event = OrderCreatedEventFactory.buildWithOneItem();
 
